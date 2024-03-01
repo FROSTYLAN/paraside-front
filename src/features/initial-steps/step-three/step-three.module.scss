@@ -1,0 +1,130 @@
+
+@import '@/styles/global/mixins.scss';
+@import '@/styles/global/spacing.scss';
+
+.stepThree {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 478px;
+  height: auto;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  align-self: flex-start;
+
+  @include media-screen(mobile) {
+    max-width: 342px;
+  }
+
+  @media screen and (max-width: 380px) {
+    width: 100%;
+  }
+}
+
+.stepContent {
+  width: 100%;
+  margin-top: 0px;
+  padding: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  @include media-screen(mobile) {
+    padding: 20px;
+  }
+}
+
+.stepTitle {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.uploaderContainer {
+  display: grid;
+  width: 398px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+
+  @include media-screen(mobile) {
+    margin-bottom: 16px;
+    gap: 12px;
+    width: 100%; 
+    overflow: auto;
+    ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+.uploaderContainer::-webkit-scrollbar {
+  display: none; 
+}
+
+.uploader {
+  flex-basis: 100%;
+  margin-bottom: 16px;
+
+  @include media-screen(tablet) {
+    flex-basis: 45%;
+    margin-right: 10px;
+  }
+
+  @include media-screen(laptop) {
+    flex-basis: 30%;
+    margin-right: 15px;
+  }
+
+  @include media-screen(desktop) {
+    flex-basis: 22%;
+    margin-right: 20px;
+  }
+  .errorText {
+    position: absolute;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.errorText {
+  position: absolute;
+  bottom: 190px;
+  left: 50px;
+  color: #ff0000;
+  font-size: 14px;
+  z-index: 1;
+}
+
+
+
+.verificationText {
+  margin: 32px 0px 16px;
+  text-align: start;
+}
+
+.continueButton {
+  margin-bottom: 15px;  
+
+  @include media-screen(mobile) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.image {
+  width: 100px; 
+  align-self: flex-end;
+  object-fit: contain;
+
+  @include media-screen(mobile) {
+    max-height: 10%;
+  }
+}

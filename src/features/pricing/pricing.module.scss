@@ -1,0 +1,47 @@
+.cards {
+  display: flex;
+  gap: 3.2rem;
+
+  .card {
+    display: grid;
+    width: 32rem;
+    padding: 3.2rem 2rem;
+    border: 0.1rem solid var(--color-gray);
+    border-radius: 1.6rem;
+    text-align: center;
+    font-size: 2rem;
+
+    .cardContent {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .cardPrice {
+      margin: 4.8rem 0;
+      font-size: 5.6rem;
+      color: var(--color-secondary);
+    }
+
+    .cardButton {
+      font-size: 2.4rem;
+      font-weight: 700;
+      padding: 1.6rem 3.2rem;
+      background-color: var(--color-secondary);
+    }
+
+    .cardSave {
+      grid-column: 1;
+      grid-row: 1;
+      margin-top: -4.4rem;
+
+      span {
+        padding: 0.8rem 1.6rem;
+        background-color: var(--color-primary);
+        color: (var(--color-white));
+        border-radius: 1.6rem;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+    }
+  }
+}

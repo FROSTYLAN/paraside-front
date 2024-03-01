@@ -1,0 +1,83 @@
+@import '@/styles/global/mixins.scss';
+@import '@/styles/global/spacing.scss';
+
+.stepContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 425px;
+  height: auto;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  flex-grow: 1;
+
+  @include media-screen(mobile) {
+    max-width: 342px;
+  }
+
+  @media screen and (max-width: 380px) {
+    width: 100%;
+  }
+}
+
+.stepContent {
+  width: 100%;
+  margin-top: 0px;
+  padding: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include media-screen(mobile) {
+    padding: 20px;
+  }
+}
+
+.stepHeading {
+  width: 180px;
+  margin-bottom: 20px;
+  text-align: center;
+  @include font-style($fw: bold);
+
+  @include media-screen(mobile) {
+    font-size: 18px;
+  }
+}
+
+.stepRadioGroup {
+  margin-left: 5px;
+}
+
+.stepButton { 
+  margin-top: 20px;
+  margin-bottom: 24px;
+
+  @include media-screen(mobile) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.stepButton a {
+  display: block;
+  text-align: center;
+}
+
+.image {
+  width: 100px; 
+  align-self: flex-end;
+  object-fit: contain;
+
+  @include media-screen(mobile) {
+    max-height: 10%;
+    margin-top: 10px;
+  }
+}
+
+.formField {
+}

@@ -1,0 +1,27 @@
+.container {
+  gap: 2rem;
+  flex-direction: column;
+  margin-top: 10%;
+
+  .logoImg{
+    width: 100%;
+    max-width: 40rem;
+    object-fit: cover;
+  }
+
+  .form {
+    max-width: 40rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    .inputCode{
+      max-width: 23rem;
+      color: var(--color-black);
+      font-weight: 700;
+      font-size: 2.4rem;
+    }
+  }
+}

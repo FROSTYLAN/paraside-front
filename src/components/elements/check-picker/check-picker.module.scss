@@ -1,0 +1,17 @@
+@import '@/styles/global/mixins.scss';
+
+.formGroup {
+  text-align: left;
+  width: 100%;
+
+  .formLabel {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+  }
+
+  .errorLabel {
+    margin-top: 0.4rem;
+    @include font-style($fs: 1.4rem, $color: var(--color-danger))
+  }
+}

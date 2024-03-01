@@ -1,0 +1,59 @@
+//------- START Screen Control -------//
+$mobile-width: 768px;
+$tablet-width: 992px;
+$laptop-width: 1200px;
+$desktop-width: 1400px;
+
+@mixin media-screen($types...) {
+  @each $type in $types {
+    @if $type == mobile {
+      @media only screen and (max-width: $mobile-width) {
+        @content;
+      }
+    }
+
+    @if $type == tablet {
+      @media only screen and (min-width: $mobile-width) and (max-width: $tablet-width) {
+        @content;
+      }
+    }
+
+    @if $type == laptop {
+      @media only screen and (min-width: $tablet-width) and (max-width: $laptop-width) {
+        @content;
+      }
+    }
+
+    @if $type == desktop {
+      @media only screen and (min-width: $laptop-width) and (max-width: $desktop-width) {
+        @content;
+      }
+    }
+  }
+}
+
+//------- END Screen Control -------//
+
+//------- START Font Style -------//
+@mixin font-style($ff: false, $fs: false, $fw: false, $color: false, $lh: false) {
+  @if $ff {
+    font-family: $ff;
+  }
+
+  @if $fs {
+    font-size: $fs;
+  }
+
+  @if $fw {
+    font-weight: $fw;
+  }
+
+  @if $color {
+    color: $color;
+  }
+
+  @if $lh {
+    line-height: $lh;
+  }
+}
+//------- END Font Style -------//

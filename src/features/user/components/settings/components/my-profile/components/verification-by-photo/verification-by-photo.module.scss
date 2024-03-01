@@ -1,0 +1,15 @@
+.files {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.photo {
+  display: flex;
+  gap: 1.6rem;
+
+  &>img {
+    width: 150px;
+    border-radius: 0.4rem;
+  }
+}

@@ -1,0 +1,52 @@
+.headerContainer {
+    padding: 1.6rem;
+}
+
+.imagesContainer {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.imagesContainer > div {
+    width: 2px;
+    background-color: var(--color-black);
+    margin: 3rem 6rem 1rem 6rem;
+}
+
+.imagesContainer > section {
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.imagesContainer section > img {
+    margin-top: 2rem;
+    width: 275;
+    height: 326px;
+    border: 1px solid var(--color-gray);
+    border-radius: 2.8rem;
+    object-fit: cover;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonsContainer > button {
+    font-weight: bold;
+    border: 1px solid var(--color-gray);
+    border-radius: 0.4rem;
+    padding: 0.8rem 2rem 0.8rem 1.6rem;
+    margin: 2rem;
+    margin-bottom: 1rem;
+}
+
+.buttonsContainer > button > img {
+    width: 36px;
+}
+
+.buttonsContainer button > p {
+    padding-left: 0.8rem;
+}

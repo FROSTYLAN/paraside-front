@@ -1,0 +1,22 @@
+//------- START Spacing Control -------//
+$spaceamounts: (0, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48);
+$sides: (top, bottom, left, right);
+
+@each $space in $spaceamounts {
+  .m-#{$space}{
+    margin: #{calc($space/10)}rem;
+  }
+  .p-#{$space}{
+    padding: #{calc($space/10)}rem;
+  }
+  @each $side in $sides {
+    .m#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{calc($space/10)}rem;
+    }
+
+    .p#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{calc($space/10)}rem;
+    }
+  }
+}
+//------- END Spacing Control -------//

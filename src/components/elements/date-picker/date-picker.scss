@@ -1,0 +1,13 @@
+.form-error {
+
+  .rs-picker-toggle:focus,
+  .rs-picker-toggle-active,
+  .rs-picker-toggle {
+    border-color: var(--color-danger) !important;
+    transition: all unset;
+  }
+
+  .rs-picker-toggle-active {
+    box-shadow: 0 0 0 3px rgba(var(--color-danger-rgb), 0.25);
+  }
+}

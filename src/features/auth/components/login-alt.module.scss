@@ -1,0 +1,15 @@
+.loginAlt {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  .btnSocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg, span {
+      margin-right: auto;
+    }
+  }
+}

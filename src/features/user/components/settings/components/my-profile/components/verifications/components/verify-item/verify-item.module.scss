@@ -1,0 +1,11 @@
+.verifyItem {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  &Icon {
+    font-size: 3.2rem;
+    color: var(--color-primary);
+  }
+}

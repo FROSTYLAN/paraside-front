@@ -1,0 +1,48 @@
+.popularList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 8rem), 1fr));
+  gap: 2.4rem;
+  padding: 0 1.6rem;
+
+  .popularUser {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    .popularUserImg {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 0.2rem solid transparent;
+      transition: var(--transition-all);
+
+      &:hover{
+        border-color: var(--color-secondary);
+      }
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .userStatus {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      width: 1.2rem;
+      height: 1.2rem;
+      background-color: var(--color-gray);
+      border-radius: 50%;
+      place-self: flex-end flex-end;
+      margin-right: 2rem;
+      margin-bottom: 0.4rem;
+      box-shadow: var(--box-shadow);
+
+      &.online{
+        background-color: var(--color-success);
+      }
+    }
+  }
+}

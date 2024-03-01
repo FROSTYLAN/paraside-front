@@ -1,0 +1,38 @@
+@import '@/styles/global/mixins.scss';
+
+.formGroup{
+  text-align: left;
+  width: 100%;
+
+  .formLabel{
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+  }
+
+  .errorLabel{
+    margin-top: 0.4rem;
+    @include font-style($fs: 1.4rem, $color: var(--color-danger))
+  }
+
+  &.formError{
+    .inputError {
+      border-color: var(--color-danger);
+      transition: unset;
+
+      input:focus{
+        outline: none;
+      }
+
+      &:focus-within{
+        border-color: var(--color-danger);
+        outline-color: rgba(var(--color-danger-rgb), 0.25);
+      }
+
+      &:hover{
+        border-color: var(--color-danger);
+        transition: none;
+      }
+    }
+  }
+}

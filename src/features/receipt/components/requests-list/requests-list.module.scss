@@ -1,0 +1,39 @@
+.headerContainer {
+    padding: 1.6rem;
+}
+
+.listContainer {
+    padding: 0.8rem;
+
+    a {
+        text-decoration: none;
+        color: var(--color-black);
+    }
+}
+
+
+.requestContainer {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    opacity: 1;
+    transition: opacity 0.3s ease; 
+}
+
+.requestContainer > img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 75%;
+}
+
+.requestContainer > p {
+    padding-left: 1.6rem;
+    font-weight: bold;
+}
+
+.requestContainer:hover {
+    opacity: 0.8;
+    background-color: rgb(126, 126, 126);
+    border-radius: 0.8rem;
+}

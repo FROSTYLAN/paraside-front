@@ -1,0 +1,27 @@
+.button {
+    padding: 1.2rem 4.8rem !important;
+    margin: 0 8px;
+    display: flex;
+    border-radius: 0.8rem;
+}
+
+.button.active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}   
+
+.button.inactive {
+    background-color: none;
+    color: none;
+    border-color: var(--color-primary);
+}
+
+.counter {
+    position: absolute;
+    width: 2rem;
+    background-color: var(--color-secondary);
+    color: white;
+    border-radius: 2rem;
+    top: 11px;
+    right: 20px;
+  }

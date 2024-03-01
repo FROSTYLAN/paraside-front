@@ -1,0 +1,22 @@
+.container {
+  height: 100vh;
+  gap: 3.2rem;
+  flex-direction: column;
+  margin-top: 10%;
+
+  .apps{
+    margin-top: 2.4rem;
+    gap: 8rem;
+
+    .app{
+      padding: 2rem;
+      border: 0.1rem solid var(--color-gray);
+      border-radius: 0.8rem;
+      transition: var(--transition-all);
+
+      &:hover {
+        scale: 1.1;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.textContainer {
+    text-decoration: underline;
+}
+
+.contentContainer {
+    font-weight: normal;
+
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.open {
+    max-height: 200px;
+  }
+
+.contentContainer > p {
+    font-weight: bold;
+}
+
+.reasonContainer {
+    display: flex;
+    padding-top: 1.6rem;
+    padding-bottom: 2.4rem;
+}
+
+.reasonContainer > * {
+    margin: 0 2rem;
+    width: 300px;
+    height: 100px;
+    border-radius: 0.8rem;
+}
+
+.reasonContainer > *:first-child {
+    padding: 1rem 4px 0 1rem;
+}
+
+.reasonContainer > img {
+    object-fit: cover;
+}

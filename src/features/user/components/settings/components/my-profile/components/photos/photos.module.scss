@@ -1,0 +1,42 @@
+.photos {
+  display: flex;
+  gap: 1.6rem;
+
+  &__upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem solid #f0f0f0;
+    border-radius: 1.2rem;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    min-width: 20rem;
+    font-size: 5.6rem;
+    color: var(--color-primary);
+
+    &:hover {
+      border-color: #000;
+    }
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.6rem;
+    overflow-x: auto;
+  }
+
+  &__item {
+    border-radius: 1.2rem;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    cursor: pointer;
+    min-width: 20rem;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

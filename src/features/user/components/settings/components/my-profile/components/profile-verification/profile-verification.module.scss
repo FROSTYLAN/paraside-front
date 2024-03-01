@@ -1,0 +1,70 @@
+.example {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin: 16px 0;
+
+  .images {
+    display: flex;
+    gap: 32px;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+
+    .item {
+      text-align: center;
+
+      .image {
+        width: 100%;
+        max-width: 100px;
+        overflow: hidden;
+        padding: 0 10px;
+        background-color: rgb(247, 247, 247);
+        border-radius: 8px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .cutted {
+        img {
+          translate: 30px 0;
+        }
+      }
+
+      .blurred {
+        img {
+          filter: blur(2px);
+        }
+      }
+
+      .shiny {
+        img {
+          filter: brightness(1.7);
+        }
+      }
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 1em;
+    text-align: left;
+  }
+
+  ul li:before {
+    content: '-';
+    position: absolute;
+    margin-left: -1em;
+  }
+}
+
+.files {
+  display: flex;
+  gap: 32px;
+
+  p {
+    text-align: center;
+  }
+}

@@ -1,0 +1,57 @@
+.headerContainer {
+    padding: 1.6rem;
+}
+
+.contentContainer {
+    padding-left: 1.6rem;
+}
+
+.requestContainer {
+    display: flex;
+    align-items: center;
+    opacity: 1;
+}
+
+.requestContainer > img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 75%;
+}
+
+.requestContainer > p {
+    padding-left: 1.6rem;
+    font-weight: bold;
+}
+
+.contentContainer > ul {
+    list-style: circle;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    font-weight: 600;
+}
+
+.contentContainer ul li {
+    margin-bottom: 1.6rem;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonsContainer > button {
+    font-weight: bold;
+    border: 1px solid var(--color-gray);
+    border-radius: 0.4rem;
+    padding: 0rem 2rem 0rem 1.6rem;
+    margin: 2rem;
+    margin-bottom: 1rem;
+}
+.buttonsContainer button > p {
+    padding-left: 0.8rem;
+}
+
+.buttonsContainer > button > svg {
+    width: 36px;
+}

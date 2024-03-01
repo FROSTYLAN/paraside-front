@@ -1,0 +1,31 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 6;
+}
+
+.navbar {
+  background-color: var(--color-white) !important;
+  box-shadow: var(--box-shadow);
+
+  .navbarContainer {
+    color: var(--color-primary); 
+    max-width: 144rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    padding: 0 1.6rem;
+
+    .navSubItem {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+  }
+
+  .logoImage {
+    width: 16rem;
+  }
+}

@@ -1,0 +1,28 @@
+.container {
+    position: absolute;
+    width: 220px;
+    z-index: 10000;
+    padding: .8rem 1.6rem;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border-radius: 1.2rem;
+    top: 0px;
+    left: 24px;
+
+    .options {
+        font-weight: bold !important;
+        border-bottom: 3px solid var(--color-white);
+    }
+
+    :last-child {
+        border: none
+    }
+}
+
+.active {
+    display: block !important;
+}
+
+.inactive {
+    display: none !important;
+}

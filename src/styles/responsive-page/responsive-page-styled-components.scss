@@ -1,0 +1,70 @@
+
+
+
+.step-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  flex-grow: 1;
+}
+
+.step-content {
+  margin-top: 50px;
+  padding: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-heading {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.step-text {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.step-input {
+  margin-bottom: 16px;
+}
+
+.step-radio-group {
+  margin-left: 5px;
+}
+
+.step-button {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.step-button a {
+  display: block;
+  text-align: center;
+}
+
+.image {
+  position: absolute;
+  bottom: 0; 
+  margin-bottom: 20px;/* Restaura el valor original de bottom */
+  left: calc(90% - 50px); /* Ajusta este valor según sea necesario */
+  width: 100px; /* Ajusta este valor según sea necesario */
+  height: auto;
+  max-height: 20%;
+  border-radius: 10px;
+  margin-top: 30px; /* Ajusta este valor según sea necesario */
+  object-fit: contain;
+  transform: translateX(-50%);
+}
+

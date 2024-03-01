@@ -1,0 +1,87 @@
+:root {
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-gray: #707070;
+  --color-gray-rgb: 112, 112, 112;
+  --color-lightgray: #F2F3F5;
+  --color-dark: #252020;
+
+  --color-primary: #D40078;
+  
+  --color-border-primary: #e5e5ea;
+  --color-primary-rgb: 196, 75, 117;
+  --color-secondary: #0097DC;
+  --color-secondary-rgb: 0, 151, 220;
+  --color-danger: #DB0B00;
+  --color-danger-rgb: 219, 11, 0;
+  --color-success: #00FF00;
+  --color-warning: #FDE04A;
+
+  --font-primary: 'Nunito', sans-serif;
+  --font-secondary: 'Lato', sans-serif;
+
+  --transition-all: all 0.2s ease-out;
+
+  --box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  --text-shadow: 3px 0px 7px rgba(var(--color-gray-rgb), 0.8), -3px 0px 7px rgba(var(--color-gray-rgb), 0.8), 0px 4px 7px rgba(var(--color-gray-rgb), 0.8);
+}
+
+// ::-webkit-scrollbar{
+//   background-color: var(--color-white);
+//   width: 1.6rem;
+// }
+// ::-webkit-scrollbar-track {
+//   background-color: var(--color-white);
+//   border-radius: 10rem;
+// }
+// ::-webkit-scrollbar-thumb {
+//   border-radius: 10rem;
+//   background-color: var(--color-secondary);
+//   box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+//   border: 0.4rem solid var(--color-white);
+//   cursor: pointer;
+// }
+
+body {
+  @include font-style($ff: var(--font-primary), $fs: 1.6rem, $fw: 400, $color: var(--color-black));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: currentColor;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dark {
+  background-color: var(--color-dark) !important; 
+  color: var(--color-white) !important;
+}
+
+.dark a {
+  color: var(--color-white) !important;
+}

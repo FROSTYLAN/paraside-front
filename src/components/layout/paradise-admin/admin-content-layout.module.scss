@@ -1,0 +1,27 @@
+.contentLayout {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.contentOptions {
+  padding: 0 6rem !important;
+}
+
+.contentLayout a > p {
+  color: var(--color-black);
+  border-bottom: 1px solid var(--color-gray);
+  padding-left: 0.8rem;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.activeLink {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.selectedLink p {
+  font-weight: bold; 
+  border-bottom: 3px solid var(--color-black);
+}

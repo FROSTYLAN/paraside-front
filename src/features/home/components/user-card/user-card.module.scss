@@ -1,0 +1,75 @@
+.userCard {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  text-decoration: none;
+
+  .optionsContainer {
+    position: relative;
+    line-height: 32px;
+  }
+
+  img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    aspect-ratio: 3/4;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.2rem;
+    border: 0.2rem solid transparent;
+    transition: var(--transition-all);
+  }
+
+  .userSummary {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    place-self: flex-end center;
+    width: 90%;
+    margin-bottom: 5%;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray);
+    border-radius: .8rem;
+    padding: 0.8rem;
+    box-shadow: var(--box-shadow);
+
+    display: grid;
+    grid-template-columns: .3fr 1fr .3fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+
+    .iconOptions {
+      transform: rotate(90deg); 
+      width: 100%;
+      height: 100%;
+  }
+
+    .userInfo {
+      text-align: center;
+      color: var(--color-black);
+  
+      .name {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.4rem;
+      }
+
+      .name p {
+        width: 99px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+  
+      .verified {
+        color: var(--color-primary);
+      }
+    }
+  
+    &:hover {
+      img {
+        border-color: var(--color-secondary);
+      }
+    }
+  }
+}
